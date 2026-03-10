@@ -1,0 +1,168 @@
+【播客逐字稿 / Full Transcript】
+视频标题：How to Use NotebookLM Better than 99% of People
+频道：Futurepedia
+时长：27:16
+来源：https://www.youtube.com/watch?v=OdCmZvPdr4s
+
+说话人说明 / Speaker Legend:
+- Speaker 0 (Matt Wolfe)：Futurepedia 主持人，AI 工具教育频道创作者
+- Speaker 1 (AI Host A)：NotebookLM 生成的播客对话主持人 A
+- Speaker 2 (AI Host B)：NotebookLM 生成的播客对话主持人 B（接续对话）
+- Speaker 3 (AI Narrator)：NotebookLM 生成的视频旁白 / 播客对话参与者
+
+---
+
+== INTRO & OVERVIEW / 开场介绍 ==
+
+[Matt Wolfe]: NotebookLM has grown in popularity, but I think it's still the most underrated AI tool out there. It's the number one tool I recommend to people in my everyday life when they ask me about AI. The capabilities have expanded massively over the past few months with new features and some powerful ways it can connect to Gemini that I don't think most people have realized yet, and it's still all free. There is a pro plan, but most people won't need it. I'll cover that at the end.
+
+== CREATE A NOTEBOOK & UPLOAD SOURCES / 创建笔记本与上传来源 ==
+
+[Matt Wolfe]: I'm logged in already, so I'll come down here and create a new notebook. If you've never used this before, this will show you what it does along the way. You can upload sources across all sorts of file types. AI water usage is a topic that comes up a lot, so I'm going to create a notebook around that. I watched this video from Hank Green covering it. Did a great job. He's awesome. So I'll copy that link and then upload it. I'll add a couple of research papers I found as PDFs. You can just drop them right in here. This website was very thorough, so I'll drop in that URL.
+
+These sources are all solid, but I want a few more to round it out. One way to find more is with their Discover Sources option, which has two choices, Fast Research and Deep Research. I'll use Fast Research to start. AI water use. So it goes out, searches across the web, and finds some sources. Now, it's important to go through and review these yourself to make sure they're actually good sources. It does default to finding pretty good options, but it's certainly not perfect. Most of these are research papers, but right here I see one is from Reddit. I'll deselect that. Normally, I'd go to each site and vet the rest of these, but this is fine for the example. So from there, I'll click Import, and it brings them all in, and just like that, I've got a solid knowledge base to work with.
+
+Now, my notebook has all of that information compiled, and it generated a summary for me right away. From here, there's a lot I can do. All my sources are on the left panel. The center panel is where I can chat with my sources. Let's use one of their default questions really quick. It reviews all the sources, sifts through the pages, then generates a comprehensive response which, as you can see, has these in-text citations all throughout. It shows below a snippet of where that came from, or if I click, it pulls up that exact spot in the source, so I can see it in full context. NotebookLM forces citations by default, so everything is grounded in real information. This massively reduces hallucinations, which is one of the main reasons I recommend it so strongly.
+
+== YOUTUBE STRATEGIST USE CASE / YouTube 策略师用例 ==
+
+[Matt Wolfe]: But that is not all it does. The most powerful aspect is this studio panel on the right. That's where we can transform this information into all sorts of incredibly helpful formats, podcasts, infographics, study guides. The quality is insane. I'll get to those in a little bit.
+
+First, I want to show you one other quick example of a completely different way to use this, just to show that it's not limited to research and learning like most people think. Now, here's something I've been doing for a while with my YouTube channel. In the analytics section, I can select all the parameters I want and export the current view as a Google sheet. This second column is the links to each video, and these are organized by view count, so I'll just do the top twenty-five most-viewed videos and paste those all right in here. Click Insert, and now I've uploaded each of my top twenty-five videos as a source. I also exported that whole spreadsheet as a PDF, so I can drop that in. Now, I have a notebook with the transcripts for my top twenty-five videos, plus all my current analytics in one searchable place. I can ask it to spot trends, identify what's working, or analyze my best-performing content.
+
+But here's where it gets really powerful. I can also connect this notebook to the Gemini app and create custom AI assistants, like a YouTube strategist or a scriptwriting partner that have all this information already built in. I'll show you exactly how to do that later.
+
+== SOURCE ANALYSIS PROMPTS / 来源分析提示词 ==
+
+[Matt Wolfe]: Something I do anytime I'm using this for research and deep diving into a topic is running a few prompts to check how good my sources are. I said NotebookLM is amazing for reducing hallucinations, but that doesn't help you if you have poor or biased sources.
+
+So I start with this prompt: "Looking only at the sources in this notebook, identify any areas where the sources disagree with each other and any clear contradictions or conflicting claims." If I have a diverse range of sources and they all mostly agree, then I'm pretty comfortable moving forward with that information. If they don't agree, this helps pinpoint any areas they may either be wrong or just require nuance.
+
+I run that on every research notebook. I'll save that as a note and then delete the chat history and run prompt number two: "Based on these sources, what important questions or subtopics about AI water use are missing or barely covered? List the biggest gaps that would need to be filled to really understand this topic well. Do not invent details. Just describe what is missing." Sometimes your sources are incomplete, and you can't know what angles are missing on a new topic. This prompt helps surface those blind spots.
+
+And I'm going to save that as a note and start the chat over with this prompt: "Are there any contrarian, alternative, or lesser-known viewpoints on AI water use that are likely not represented in these sources? Describe those possible viewpoints at a high level and suggest what kinds of sources I would need to look for to find them." This one's especially useful for controversial or evolving topics. The consensus view isn't always the correct one. This helps identify alternative viewpoints you might be missing.
+
+For any serious research project, I use one or more of these prompts before diving deep.
+
+== IMPORTANT SETTINGS / 重要设置 ==
+
+[Matt Wolfe]: Once I know my sources are solid, then I can start actually working with the information. From here, I can chat and ask questions like you would with any large language model, but with a crucial difference — everything is grounded in information I can actually trust. It's extremely transparent about where every answer comes from, so I can fact-check and get more context anytime I want. And as you're chatting, you can check and uncheck sources to narrow the context however you'd like.
+
+There are some settings that let you customize how the notebook responds, and these are worth adjusting based on what you're trying to do. I'll come up to the Configure Notebook icon, and first define your conversational goal style or role. Default is better for general research and brainstorming. Learning guide is optimized for educational content. Custom is where things get interesting — this is where you can really tailor it to your specific needs. Like in the YouTube example I showed, this is where I'd tell it to act as my YouTube strategist.
+
+Then under that, you also can choose your response length. I'm usually on default or shorter. I rarely use longer because in default mode, you can just ask for a specific response to be longer if you need it, rather than making every single response lengthy.
+
+While you're chatting, your chat automatically saves when you leave. But if you want to start fresh, you can click Delete Chat History. Before you do that, if you want to preserve your current conversation, click Save to Note. And if you have a particular chat conversation that becomes really useful, there's an option to convert that into a source. Then it becomes part of your notebook's knowledge base.
+
+== STUDIO PANEL OVERVIEW / Studio 面板概览 ==
+
+[Matt Wolfe]: Now we'll get onto the really powerful stuff. This right panel, the Studio panel, has all these different formats to help you view, understand, and retain the information from your notebook. Audio overview, video overview, mind map, reports, flashcards, quiz, infographic (which is my favorite), slide deck, and data table. And just like with chatting, you can select and deselect sources before generating any of these.
+
+== MIND MAP / 思维导图 ==
+
+[Matt Wolfe]: Mind map comes back really quickly. It's got this nice little mind map. Can expand these out and collapse them back down, which is perfect for seeing how concepts connect and relate to each other. And if you click on one of these, it will read your sources and generate relevant information to that subtopic. That can be a great way to visualize certain topics.
+
+== REPORTS / 报告 ==
+
+[Matt Wolfe]: Then when you click Reports, you'll see several format options you can generate in. Create your own, or you can craft reports your way by specifying structure, style, tone, and more. Then there's briefing doc, study guide, blog post, and below are new ideas it generates based on your notebook. Each one of these is further customizable.
+
+== FLASHCARDS & QUIZ / 闪卡与测验 ==
+
+[Matt Wolfe]: Next up are the study tools, flashcards and quiz. Both are straightforward but really well executed. With flashcards, you can customize the number of cards and the level of difficulty and narrow it to specific topics or sources. The interface is really clean and intuitive. And same thing with the quiz feature. Customize the number of questions and level of difficulty. The flashcards and quiz are great if you're actually trying to learn and retain this material long term.
+
+== INFOGRAPHIC / 信息图 ==
+
+[Matt Wolfe]: Next up is my favorite, infographic. It uses Nanobana Pro, which is incredible at this, to create an infographic to visualize your data, and there's a ton of ways you can customize these and get creative with it. First, you can choose your orientation, and the level of detail. I'll generate one at each level.
+
+For the standard, how about AI water usage, but style it like a comic book villain origin story? And for detailed, I'll let it just intake all the sources.
+
+The simple version looks really nice, and I just read through this — it doesn't have a single spelling error. All the text actually looks perfect. The comic book-style villain's origin story: "Rise of the Hydrovore: AI's Secret Thirst for Water" — honestly, this is just amazing. The text all does look completely perfect here. It's even got a consistent character through it.
+
+The detailed version is super aesthetic, but this is where you start to run into the issue of errors in the text. I typically stick to the standard or concise. Those tend to have little to no errors.
+
+== SLIDE DECK / 幻灯片 ==
+
+[Matt Wolfe]: Slide deck also uses Nanobana Pro. You can create a detailed deck, a comprehensive deck with full text and details, or presenter slides, clean visual slides with key talking points. I'll try something different, like in a cyberpunk aesthetic with dark backgrounds, bright neon pink and electric blue highlights.
+
+These are all super aesthetic. It uses all the information from the notebook. It's kind of insane how good these can look. The cyberpunk one: "The Ghost in the Machine" — it just nailed that vibe. All of the text looks perfect on every single page. This is basically as good as a slide deck can get with just a click from the information I uploaded.
+
+== DATA TABLE / 数据表格 ==
+
+[Matt Wolfe]: We've got the data table. You can customize it tons of different ways. It searched all those sources to extract all this information. This would have taken a huge amount of time to go through and find within those sources manually.
+
+== AUDIO OVERVIEW & INTERACTIVE MODE / 音频概览与互动模式 ==
+
+[Matt Wolfe]: When you generate an audio overview, there are some different settings to choose from: a deep dive, a brief, a critique, or a debate. The deep dive sounds like a podcast, which went super viral when it first came out. And a cool part is there's an interactive mode where you can jump in yourself and ask questions or steer the conversation.
+
+[AI Host A]: Welcome to the Deep Dive. Today, we're exploring a crucial paradox.
+
+[Matt Wolfe]: A really big one: the incredible exponential growth of AI.
+
+[AI Host A]: And the absolutely massive environmental bill it's generating right now.
+
+[Matt Wolfe]: Water. The sheer scale of water consumption just to cool all these massive data centers.
+
+[AI Host A]: And what are you talking about scale-wise?
+
+[Matt Wolfe]: Well, the estimates suggest that global AI demand could reach anywhere from four point one to maybe six point six billion cubic meters by 2027.
+
+[AI Host A]: Oh, wait. Someone wants to join. Hey, go for it.
+
+[Matt Wolfe]: Well, how do those numbers compare to other industries?
+
+[AI Host B]: And remember, 40% of that corn goes to ethanol for cars.
+
+[AI Narrator]: So a lot of that water is powering our vehicles, not just food.
+
+[Matt Wolfe]: These podcasts are just awesome. It's a great way to absorb the data. Just a completely different format than all the other stuff in here. I like to generate one of those and listen to it when I'm in my car or doing the dishes or things like that.
+
+== VIDEO OVERVIEW / 视频概览 ==
+
+[Matt Wolfe]: You can create an explainer video, a structured, comprehensive overview that connects the dots within your sources, or a brief, a bite-sized overview. They have a bunch of different visual styles to choose from. You can also create a completely custom style. It essentially made an entire slide deck that covers a full narrative and then created an engaging, natural-sounding voiceover to explain it step by step, and it all syncs up. It's like a seven-minute video overview. Incredible that it's able to do this.
+
+== DEEP RESEARCH / 深度研究 ==
+
+[Matt Wolfe]: There's also a deep research option. This one takes a few minutes, but it's much more thorough. It uses an agentic model to search the Internet on your topic and adapts its path based on what it finds, and then eventually comes back with a full research report that you can add as a source. Plus, it includes a list of all the sources it used, and you can pull those directly into your notebook as well.
+
+== NOTEBOOKLM IN GEMINI / 在 Gemini 中使用 NotebookLM ==
+
+[Matt Wolfe]: Now, here's something really powerful that most people have no idea about. You can access all your NotebookLM notebooks directly in the Gemini app. In any new chat, just click the plus button, NotebookLM is at the bottom, and select a notebook, and now Gemini has all that context as grounding.
+
+But here's where it gets even better. You can use NotebookLM as the knowledge base for a Gem. Gems are like custom GPTs in ChatGPT — specialized AI assistants you create by giving them instructions, context, and files. If I create a new Gem, give it a name and description, add all the instructions, and come down to Knowledge, click Add files, and select NotebookLM, and add the YouTube notebook. Now this Gem has custom instructions on how to act, plus access to all my analytics and top performing scripts.
+
+You can create endless specialized assistants — a work Gem connected to a notebook with your company's data and SOPs, a fitness coach connected to your workout logs, a competitor analysis assistant. The NotebookLM connection makes building these knowledge bases so much easier than uploading files one by one.
+
+== MOBILE APP / 移动应用 ==
+
+[Matt Wolfe]: Another thing worth mentioning is there's a mobile app for both iOS and Android. The mobile app is great for a couple of things. One is you can quickly save sources to a notebook on the go — snap a photo of a document, save a web page. And number two is once you've generated an audio overview, it's way easier to just pull it up in the app and listen rather than downloading it from your computer.
+
+== OTHER USE CASES / 其他使用场景 ==
+
+[Matt Wolfe]: Research and learning is what most people use NotebookLM for. But I don't think it crosses most people's minds how flexible this tool actually is. So I'm gonna run through some unique use cases:
+
+1. A tech manual database or homeowner's binder — upload owner's manuals for every product you own. Now anytime something breaks, you have every manual searchable in your pocket.
+
+2. Personal journal analysis — upload all your entries. Ask it to identify blind spots, recurring themes, patterns. You could connect it to a Gem and give it instructions to act as a cognitive behavioral therapist.
+
+3. A fitness and nutrition coach — upload your workout logs, meal plans, and fitness advice. Ask it to analyze your progress, suggest routines, or create grocery lists.
+
+4. Meeting notes archive — all your work meetings in one searchable place. Track progress, identify recurring pain points.
+
+5. Debate prep — upload research on both sides of a topic, then use the debate feature in audio overview to hear arguments and counterarguments.
+
+6. A recipe book — upload your family recipes, cooking notes, and dietary restrictions.
+
+7. A book companion — upload a book (or audiobook transcript) and use NotebookLM as a reading companion, study guide, or discussion partner.
+
+8. A travel planner — upload travel guides, articles, and itineraries. Get personalized recommendations.
+
+9. Language learning — upload texts in a target language. Use flashcards, quizzes, and chat to practice.
+
+10. A personal CRM — upload contact notes, meeting summaries, and relationship histories.
+
+== PRO PLAN / Pro 付费计划 ==
+
+[Matt Wolfe]: On the free plan, you get 100 notebooks, each with up to 50 sources. The Pro plan at $20/month primarily upgrades the Studio features with higher limits, faster generation, and priority access. Most people will not need Pro. The free plan is extremely generous, especially compared to other AI tools.
+
+---
+【逐字稿完】
