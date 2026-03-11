@@ -1,0 +1,161 @@
+【播客逐字稿 / Full Transcript】
+视频标题：黄仁勋 2011 年斯坦福大学演讲 — 比两年MBA课程更有价值的商业课
+         Jensen Huang 2011 Stanford Speech — More Valuable Than Two Years of MBA
+频道：柴郡🔔｜Crypto+AI Plus (@0xCheshire)
+时长：约59分钟
+来源：https://x.com/i/status/2008046736426889221
+
+说话人说明 / Speaker Legend:
+- Speaker 0 (Audience / Moderator)：观众反应与主持人
+- Speaker 1 (Jensen Huang)：NVIDIA 创始人兼 CEO
+- Speaker 2-9 (Audience Q&A)：提问观众
+
+---
+
+== OPENING — 开场与愿景 ==
+
+[Audience]: [clapping]
+
+[Jensen Huang]: Thank you, Tina. I gave my last, last pennies to Jim Plummer to build a building. I am now officially broke.
+
+[Audience]: [laughing]
+
+[Jensen Huang]: Uh, so, um, instead of giving you a, uh, company presentation today, what I thought I would do is just have a conversation with you. Uh, you know, at any time, if you have a question, uh, if you would like to change the direction of our, of our conversation, just raise your hand and we'll, we'll, we'll talk about whatever comes up. Um, a lot of people talk about and write about, uh, building companies, and I can tell you firsthand that building a company is extraordinarily gratifying. It is also incredibly hard. And so the things that, that, um, uh, that you wanna talk about, uh, with respect to the company-building process, uh, is rather, uh, expansive. You could talk about company-building processes, uh, from a lot of different perspectives. And so I'm gonna try to touch on a few of them that I think are, are particularly, uh, important in my experience.
+
+== PERSPECTIVE VS. VISION — 愿景与视角 ==
+
+[Jensen Huang]: So sixteen years ago, uh, we started NVIDIA, and, um, the, the, uh, the insight that we had, uh, some people call it vision. Um, uh, vision's an awfully big word to me. Vision's an awfully big word to me because I, I believe, first of all, vision matters. Let me tell you that vision matters, and I'll help you understand that in a second. Um, but I like to use the word perspective because it makes it possible for anyone to have one. When you say vision, it feels like only a few selected visionaries of the world can have one, but everyone has a perspective, and that's, in fact, all vision means. That you see the world, uh, in a way that is either, uh, different, um, or, uh, otherwise, okay, than, than somebody else. Uh, and you see opportunities that I think are— that you believe are particularly important to go in and address, that you can address, uh, in a particular way. And so perspective.
+
+[Jensen Huang]: Um, our perspective at the time, this is nineteen ninety-three. Uh, you guys won't, won't remember this, but, uh, the, uh, the PC, um, was Windows three point one. Uh, CD-ROM, uh, was, uh, about to be introduced. Uh, there were no PCs with networks. Um, wireless technology, uh, the no— if you said some— if somebody said radio, uh, I think you would— the word that would come to mind is FM radio. Uh, and so wireless technology didn't exist. Uh, the fastest microprocessor, uh, in the world was a sixty-six megahertz forty-six DX2. Uh, and I don't think any of you would even use it, uh, in your tennis shoes today. Um, and we would run our computers with that. Uh, and, uh, the PC was, was, uh, becoming used, uh, for, uh, desktop or for office automation. Uh, our perspective was that this particular, uh, device was going to be unique in the sense that it has the ability to run programs. And what if, uh, we, uh, gave it the benefit of running three-D graphics programs so that, um, uh, you could, uh, explore new worlds, play games, um, you know, play games? And so, uh, we started a, a company and, and the business plan, uh, basically, uh, read something like this. We're gonna take, uh, technology that was available only in the most expensive workstations. We're gonna try to make it— reinvent the technology and make it inexpensive. And, um, uh, the killer app was video games.
+
+[Jensen Huang]: Uh, and so I, I took this idea to Sand Hill Road, uh, and, um, uh, and they told me there was no video game market. People don't start companies to play games. And, um, uh, my parents, my— uh, I remember calling my mom and telling her that I'm gonna start this company, and she says, "You know, what do you, what do you guys do?" And I said, "We build these things called three-D graphics chips, and, and, um, uh, people would use them to play games." And, and then she, she said, "Why don't you go get a job?"
+
+[Audience]: [laughing]
+
+== VIDEO GAMES & GOOGLE EARTH — 游戏市场与谷歌地球 ==
+
+[Jensen Huang]: And, and so, and, and so, um, uh, now, of course, of course, games was, was, we believe, uh, going to be a very large part of the marketplace. Now, we had that perspective, uh, for very obvious reasons. We grew up in the video game generation. I was the video game generation. I was the beginning of the video game generation. And so the, the entertainment value of video games, uh, computer games was very obvious to me, and I could imagine how it could be a very large market and a very large industry. For a lot of the people that were older, that sensibility didn't exist. And so notice I just described to you a perspective about the world that we had that is apparently obviously now true because video games is the world's largest digital media industry today. Um, it is apparently true. And yet, at the time, uh, our common sense was unique. Nobody would have created the technology, nobody would have created the company with the sole purpose of building technology to make video games possible. And so that was our perspective.
+
+[Jensen Huang]: Now, we felt that, that, um, video games would, would of course fuel the technology, uh, development, uh, but you could use this technology for a whole bunch of other, other reasons. And, um, uh, one of my favorite, favorite, uh, applications, uh, this happened about, um, I guess about five years ago. Uh, a small company, struggling company here in Silicon Valley, uh, called Keyhole. And, um, uh, they were— they created a, a three-virtual world, and it had no application. This three-virtual world, and you start out in space, you see the Earth, you zoom into any location you wanted just by typing in the address. I thought it was such a fabulous way of exploring the world, going to places you've never been, and they couldn't raise a penny. And so, uh, we, uh, we, uh, um, uh, I was so excited about the company, and we put money into the company, and I went everywhere and showed that demonstration. I would tell people that this is the way we're gonna do search someday. Uh, that, that, uh, small company, uh, was, uh, eventually purchased by Google and, uh, became Google Earth. Google Earth is now, uh, the single largest downloaded, most frequently downloaded application in the history of mankind. Over two hundred plus million downloads.
+
+== YAHOO VS. GOOGLE — 不同视角决定不同命运 ==
+
+[Jensen Huang]: Um, so three graphics could be used for a lot, uh, for a lot more than video games. Now, that, that vision, if you will, that perspective, um, was unique at the time and hard to sell. Many years later, uh, Sequoia Capital, uh, came to me and said, "You know, there's a couple of kids at Stanford, and they have this thing, and it's a, it's an Internet thing. And you just type in, you know, what you're looking for, and it shows up, you know, puts up the web-website." And, um, and I said, "Yeah, Yellow Pages. I mean, you know, no duh, right?" And, and they said, "Should we invest in this company?" And I said, "There's no freaking way they're gonna make money. That stuff is free." Right? And so they said, "Well, you know, we can't figure it out ourselves, but it doesn't cost much to give them a, a million or two." Uh, and, uh, and they invested in a small company called— what eventually became Jerry's company called Yahoo!
+
+[Jensen Huang]: Um, notice, although I had the perspective about one thing, I didn't have the perspective about something else. Just because you're a visionary doesn't mean you're a visionary by everything. Your perspective stems from your life experiences, what's commonsensical about you, what's interesting to you.
+
+[Jensen Huang]: And now the question is, they're all doing search, and they all did, did a reasonably good job. Now comes the question is what was their perspective? One website thought that they were a destination. We would be a destination, kind of like a channel. Somebody said, "In fact, since we're gonna be a destination, we would serve up content, and therefore the search part of it is a commodity. We'll outsource that." So all of the search engines which started out as search turned into destinations or portals, and they outsourced the search to someone else, which made it possible for Google to start. And so notice two companies doing exactly the same thing, started with the exact same fundamental core technology, ended up in radically different places because they had different perspectives. They saw the world differently. So perspective matters. Vision matters.
+
+== SURVIVING 200+ COMPETITORS — 从200家竞争者中存活 ==
+
+[Jensen Huang]: Now, in our industry, uh, shortly after we were started, uh, three D graphics for PCs and, and consumer three D graphics became the hottest, hottest thing. And so everybody in Silicon Valley was starting a three D graphics company. We were, um, in nineteen ninety-three, the only consumer three D graphics company in the world. By the end of a couple of years or so, nineteen ninety-five, uh, there were probably fifty, seventy startups doing exactly the same thing we were trying to do. And over time, we competed with about two hundred companies. NVIDIA today is the only surviving computer graphics company in the world.
+
+[Jensen Huang]: And so the question is then what happened? Competition is intense. Everybody has smart people. Everybody has money. We competed with IBM. We competed with HP. We competed with Silicon Graphics. We competed with Sony, three DFX, S3, Cirrus Logic, big, small, international, local. We competed with companies all over the world.
+
+== UNDERSTANDING YOUR BUSINESS ESSENCE — 理解商业本质 ==
+
+[Jensen Huang]: I always believed that, uh, you need to understand the reason why your business work. What is the essence of your business? What makes it work? Now, the foundation of my business, uh, at its core is semiconductor technology. Moore's Law is not so much a physical law as it's a law of competition. And Moore's Law approximately gives you twice the performance every year or two. And so understanding the, the fundamental ingredient of our business improves by a factor of two every year and simultaneously reduces in cost by a factor of two every year. The question is what makes a survivable business?
+
+[Jensen Huang]: And so our first perspective was that three D graphics was insatiable. It was insatiable. That if I made something twice as good every year, even if the customer never asked for it, even if the customer told us it was too expensive, even if the customer, when you went to float that product specification to them, told you that they're not interested, and in fact, that was the case. I took, I took our product spec to, uh, to Dell and HP and IBM and Gateway, and they all told me it was too much money. You're well outside of the boundaries of what they were willing to pay for. When your customers all tell you not to do something, the question is then what do you do? In our case, because we had this unique perspective that three D graphics was insatiable and Moore's Law was our friend therefore, uh, we should make our graphics processors twice as good every year. And so for the first five years of our company, we just turned off our blinders and said, "We're gonna ignore customers."
+
+[Jensen Huang]: Now, which one of your— of you guys are gonna go through your marketing courses and the lesson that it teaches you is ignore your customers? Well, sometimes you have to ignore your customers. And the reason for that is because they don't know the nature of your business.
+
+== REINVENTION — 公司再造：可编程着色器 ==
+
+[Jensen Huang]: Then the question became, uh, what now? Now you guys are gonna learn that innovation is a rather dangerous thing. On the one hand, once you discover a great idea, once you discover a great idea, you rinse and repeat, rinse and repeat, and you make that idea better and better and better. At some point, it becomes good enough. And so in the late nineties, about seven years into our company, I came to the conclusion, um, that three-d graphics was not going to be sustainable as a, a accelerator or a fixed function device that renders texture maps and polygons on the screen. That we had to change the company to make the three-d graphics processor programmable so that it could be an artistic medium for expression.
+
+[Jensen Huang]: And so we decided to make the GPU programmable and, um, make it a medium for artistic expression and invented a technology called programmable shader. Almost every single video game that you guys see today has our fingerprint on it, whether it's a Xbox 360 or PS3 or any PC game today. But the crossing from one generation of technology to the next generation almost killed the company.
+
+== Q&A: INVESTORS & CANNIBALIZATION — 投资者与自我颠覆 ==
+
+[Audience Q]: What did your investors say about your idea of reinventing your company to include programmable CPUs?
+
+[Jensen Huang]: It's not a conversation you really have with your shareholders, but you do have the conversation with your management team first, your employees second, your board of directors third. When you're in a technology industry, when the technology moves this fast, if you're not reinventing yourself, you're just slowly dying. Unfortunately, at the rate of Moore's Law, which is the fastest of any rate that we know.
+
+[Audience Q]: You had a very successful product that was generating a lot of money.
+
+[Jensen Huang]: I know. So it's scary. There is a theory that if you don't cannibalize it, someone will, and it surely will be cannibalized. And so if you wanna be a market leader, you have to take the initiative to cannibalize your own products and have your ideas cannibalize your own ideas. When we went from a fixed function graphics accelerator to a programmable shading architecture, our first chip almost killed the company. It was called GeForce FX. It's a baby only a mother can love. We took enormous chance in building GeForce FX, but it almost broke our back. But if we didn't build that chip, I am sure NVIDIA would be dead today. I am absolutely certain we'd be dead. It was one of the biggest gambles in our history.
+
+== Q&A: RESOURCE ALLOCATION — 资源配置与机会成本 ==
+
+[Audience Q]: Is it harder to make profit with consoles than individual cards?
+
+[Jensen Huang]: The economics of building anything ultimately comes down to the amount of competition you have. You don't set the price, the competition sets the price. The market doesn't set the price, the competition does. You have to realize what is the finite resource, what is the scarce resource that you have as a manager? The function of a manager is to allocate resources properly for the best return. And so if you think about our resources, our resource is the finite number of extraordinary engineers and how much time they have in a day to pursue whatever opportunities that are out there. You have to be thoughtful about what is your critical resource. Do you have more of it or less of it than the market demands? And then what's the appropriate return on that investment, thinking about not just your cost, but more importantly, your opportunity cost.
+
+== Q&A: CULTURE OF INNOVATION — 创新文化 ==
+
+[Audience Q]: Can you tell us a little bit about the culture that you tried to set at NVIDIA?
+
+[Jensen Huang]: At the core of our company's success is innovation. However, I don't believe you can fundamentally say that you want as a CEO to nurture the spirit of innovation, to encourage innovation, unless you have a culture of risk-taking. We have to encourage our engineers, our marketing people, all of our employees, to take calculated risks.
+
+[Jensen Huang]: If you want to be successful, I would encourage you to grow a tolerance for failure. To develop a tolerance for failure. I want you to try things even though it is impossible to calculate precisely that it would lead to success, that your instincts, your intuition is something you ought to follow. So you have to have this culture or tolerance for risk-taking. But the thing about failure is this: if you fail often enough, you actually might become a failure, and that's different than being successful. And so the question is: How do you teach someone how to fail but fail quickly and to change courses as soon as you know it's a dead end? And the way to do that is we call it intellectual honesty.
+
+== Q&A: CO-FOUNDERS & GOVERNANCE — 联合创始人与治理 ==
+
+[Audience Q]: How'd you choose your co-founders?
+
+[Jensen Huang]: Don't ever go into business with anyone you don't deeply trust. And they were two of my closest colleagues, and I trust them completely. And they're wonderful friends even today. As a CEO, selecting people is ninety-nine percent of the job.
+
+== Q&A: GPU COMPUTING — GPU 通用计算 ==
+
+[Audience Q]: What applications do you see driving demand in the general purpose GPU market?
+
+[Jensen Huang]: When we invented GeForce Effects, although it wasn't a very successful GPU for graphics, researchers around the world noticed that it had a programming language called CG, and that you could program this GPU to do other things aside from graphics. And it had thirty-two-bit floating point, IEEE compatible. And so some smart researchers, many of them were here at Stanford, just bought a graphics card from Fry's and started writing programs. And they discovered that if they really worked hard, they could get an algorithm to run twenty times faster, and they couldn't believe it. So what if we took all of those parallel processors that were inside our GPUs and make it completely programmable and expose it through a language? And today we call it CUDA.
+
+== Q&A: EQUITY & LEADERSHIP — 股权分配与领导力 ==
+
+[Audience Q]: How can you find each of your position in the company, and how can you distribute the profit?
+
+[Jensen Huang]: All of our pay were identical, and we all had identical share in the company. That's simply fairness. Now the question becomes governance. You can't build a great company when you have three people who has to vote on everything with equal share of responsibilities. I think it kind of went like this. "All right, Jen-Hsun, you're the CEO, right? Okay." That was done.
+
+[Jensen Huang]: I think CEOs and leaders need to be comfortable with ambiguity. Some people hate that. But this ambiguity is important to be comfortable with. And I think that all CEOs that are very successful are comfortable with ambiguity, and I am very comfortable with ambiguity.
+
+== Q&A: STARTING WITH $200 — 两百美元创业 ==
+
+[Audience Q]: What percentage of your initial investment was yours?
+
+[Jensen Huang]: So I was thirty years old, and I'd never taken a single business class, and I've never taken any marketing classes. I bought a Mac so I could use Persuasion and tried to create a company presentation to take to venture capitalists. My first official day of work was my thirtieth birthday, February seventeenth. We met every day, the three of us, in one of the founder's townhouse in Fremont. And there would be nothing to do. So what did you guys do last night? The big event of the day would be, "Hey, where do you guys wanna go to for lunch?" That lasted for a few months.
+
+[Jensen Huang]: I met a lawyer, went to Cooley Godward, and they helped us incorporate the company. He says, "How much money do you have in your pocket?" I said, "Two hundred dollars." So he says, "Okay, give me two hundred dollars." For two hundred dollars, I bought twenty percent of Nvidia.
+
+[Audience]: [laughing]
+
+[Jensen Huang]: And then I went back and they both gave me two hundred dollars, and they both got twenty percent. And that's how it worked, literally. Nvidia, I never finished my business plan.
+
+[Jensen Huang]: VCs don't invest in business plans because business plans are easy to write. They invest in great people. Do they trust you? Your reputation matters. Your history matters. And the second thing is you need to have a vision that's sufficiently large to invest in. The size of the market. And they wanna know that there is a clever idea that the market's never had before. That last part is probably least important. You might have to reinvent yourself over time. And if you wanna reinvent yourself, you need to have great people. That's why great people are so important.
+
+== Q&A: MENTORS & FOCUS — 导师与专注 ==
+
+[Audience Q]: Who were some of the people that you consider to be your mentors, and what was some of the best advice that you got from them?
+
+[Jensen Huang]: I truly believe that if you wanna be successful, a successful habit is to have the capacity and the willingness to learn from just about anybody. And I do. Some of the great advice that I've had over the years: focus. Laser beam focus. Don't do too much. Do a few things well and do it with extraordinary intensity. If you look at what I do with my time, I wake up in the morning and the first thing of my time is Nvidia, and the last thing I do is Nvidia, and I do that twenty-four/seven. And if I could figure out a way to do that for another fifty years, we're gonna be a good company.
+
+== Q&A: BIGGEST CHALLENGE & FUTURE — 最大挑战与未来 ==
+
+[Audience Q]: What's your biggest challenge at present? What's your best and worst estimation of the future?
+
+[Jensen Huang]: The biggest challenge with building a company is the reinvention of the company. Every successful thing needs to be torn down at some point and be rebuilt. It is unfortunate but true. In the technology industry, reinventing the company every ten years is almost a necessary thing. I love the process of reinvention.
+
+[Jensen Huang]: What's my best forecast for our company? I think that Nvidia has the opportunity to become one of the most important technology companies in the world. And my best forecast for me is that I am eighty years old, and I'm here talking to students, and I hope I'm still the CEO.
+
+== Q&A: CASH IS KING — 现金为王 ==
+
+[Audience Q]: How do you manage cash flow in the early days?
+
+[Jensen Huang]: Survival is always important. Cash is always king. And so as the CEO, you're either making money, saving money, or raising money. And if you're not making money, raising money, and saving money, you ought to be doing those three things. As a startup, you're always going out of business, right? That's the definition of a startup, an enterprise that is nearly out of business all the time.
+
+== Q&A: SUCCESSION PLANNING — 接班人计划 ==
+
+[Audience Q]: How are you prepared for the leadership succession?
+
+[Jensen Huang]: One of the primary roles of a CEO, in order to grow the company, you have to cultivate new leaders so that they can have new ideas and grow new businesses. I spend most of my time these days sitting with our general managers and sitting with our leaders and helping them think through strategies and challenges and product roadmaps. I believe that succession planning by a priori picking out three people that the board should consider in the case that I get run over by a bus is a toxic, toxic process. I think it's a much better process to focus on developing the next generation of leaders.
+
+== CLOSING — 结语 ==
+
+[Audience Q]: My friends in Peru have many brilliant ideas but don't feel motivated because they don't have money.
+
+[Jensen Huang]: Money is the only singular reason NOT to start the company. Because starting companies are— it's a very, very unlikely probability for success. And so if you're looking for— If that is your reason for doing it, you will likely regret the experience. You should start the company and build a company because you just so believe in your idea, you're so passionate about it, and you wanna build something great. The only reason you wanna do it. Money just comes along.
+
+[Jensen Huang]: Ideas are a dime a dozen. There's so many ideas. You have to have a perspective that's unique, that you feel really strongly about it, and that you're willing to persevere almost any challenge to make it happen. That's the reason why you should start a company. Thank you, everybody. I enjoyed it.
+
+[Audience]: [clapping]
