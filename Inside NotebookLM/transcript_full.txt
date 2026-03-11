@@ -1,0 +1,230 @@
+【播客逐字稿 / Full Transcript】
+视频标题：Inside NotebookLM | Raiza Martin and Steven Johnson
+频道：Google DeepMind
+时长：46:11
+来源：https://youtu.be/mccQdu5afZw
+
+说话人说明 / Speaker Legend:
+- Hannah Fry：Host, Professor at University College London, presenter of Google DeepMind: The Podcast
+- Raiza Martin：Product Lead for NotebookLM at Google Labs
+- Steven Johnson：Editorial Director for NotebookLM at Google Labs, bestselling author
+
+---
+
+== INTRO: THE CABBAGE & PUDDLE EXPERIMENT ==
+
+[Hannah Fry]: Welcome to Google DeepMind, The Podcast. I'm Professor Hannah Fry. Now I wanna start today, unusually perhaps, with a clip from another podcast. Listen to this.
+
+[AI Host 1]: What's the overall message here? Is it social commentary, artistic expression, or just a really elaborate joke?
+
+[AI Host 2]: That's the beauty of this piece, I think. It defies easy categorization.
+
+[AI Host 1]: Mm.
+
+[AI Host 2]: It exists in this liminal space between language and non-language, between art and absurdity.
+
+[Hannah Fry]: This is a very interesting discussion, which as you might have guessed, is AI generated. But what is notable about this particular clip, aside from the fact that neither of the two podcast hosts have ever existed, is that their conversation and mini treaties on human nature and our relationship with art was generated from the most unusual of prompts. The podcast itself was created by a new feature called Audio Overview, part of NotebookLM, a personalized AI research assistant from Google Labs. Now, NotebookLM is powered by Gemini, and it lets you upload your sources, anything from PDFs to videos to generate insights, explanations, and of course, podcasts. We often think of AI as just crunching through data and spitting out answers, but NotebookLM draws on expertise from storytelling to present information in an engaging way. And we wanted to see what happens when you ask NotebookLM to analyze what most people would consider to be nonsense, a single document containing just two words repeated 1,000 times over, cabbage and puddle. And here is the result.
+
+[AI Host 1]: So I have to admit, at first I was like, "What is going on here?"
+
+[AI Host 2]: [laughs]
+
+[AI Host 1]: Right? You get this document, and it's just the same two words over and over and over.
+
+[AI Host 2]: Right, cabbage and puddle. A thousand times.
+
+[AI Host 1]: But honestly, the more you stare at it, the more it kind of gets to you. You know what I mean?
+
+[AI Host 2]: Yeah, it really does. It forces you to slow down and think about, like, what is meaning? What makes something meaningful?
+
+[Hannah Fry]: Incredible. Now, before the cabbage and puddle thing, obviously there are more mainstream use cases. Audio Overview has been a massive hit. People have been using NotebookLM for everything from personal journals to PhD dissertations. Now, joining me to talk all about what it takes to build something like this, and the interesting ideas behind it, is the team behind NotebookLM.
+
+[Raiza Martin]: I'm Raiza Martin, and I am the product lead for NotebookLM.
+
+[Steven Johnson]: And I'm Steven Johnson, and I'm the editorial director for NotebookLM.
+
+== HANNAH'S PhD ==
+
+[Hannah Fry]: Raiza, Steven, welcome. I should confess, being a professor, I had to test it on the most boring thing that I could think of, which was my own PhD thesis. It managed to make the whole thing sound super fun and fascinating, which, if you know my thesis, is quite the accomplishment.
+
+[Raiza Martin]: Were you impressed?
+
+[Hannah Fry]: Yes, actually, I was really impressed. Honestly, like genuinely, like the, the back and forth, it sounded, they sounded natural, you know?
+
+[Steven Johnson]: From the very beginning, we spent so much time thinking about this.
+
+[Hannah Fry]: Mm
+
+[Steven Johnson]: Like, there are all these, like, subtle things that you have to, like, make work. Nobody wants to listen to two robots talk to each other. Like, that will fail and be unlistenable after 30 seconds. You have to master all these very subtle, weird things that people do in conversation for it to work.
+
+== REACTIONS TO AUDIO OVERVIEWS ==
+
+[Hannah Fry]: To make it human-like. Exactly as you said, Raiza. I want to come back to the audio overview features a little bit later. I also wanted to discuss the origins of NotebookLM. How did it come about, Raiza?
+
+== ORIGINS OF NotebookLM ==
+
+[Raiza Martin]: For one, I think a lot of people think that NotebookLM is new because of the audio overview feature. We had such a massive influx of people, and people were like, "Wow, what is this? A brand new thing from Google." But actually we've been working on NotebookLM for over a year. We first announced it at Google I/O last year as Project Tailwind. And before then we actually had been incubating it inside of Google Labs. And it's actually how Steven and I met. Steven was brought in... What was your original title, Steven?
+
+[Steven Johnson]: I was visiting scholar.
+
+[Raiza Martin]: Yeah. [laughs]
+
+[Steven Johnson]: Then I became editorial director. [laughs]
+
+[Raiza Martin]: That's right. He was promoted. And at the time, Josh Woodward, who now leads Google Labs, he's the vice president, told me, "I want you to build a new AI business." And I thought to myself, "What does it take to actually do that?" But what I'll say is, one of my early inspirations was just watching Steven work. Honestly, just understanding how he does what he does. I was like, "Wow, that could be a real superpower if he could give that to people."
+
+[Steven Johnson]: It was a mix of Steven is abnormal in his research habits, but maybe we could turn this into a mainstream pursuit somehow. Yeah, it was interesting 'cause I had this long history of writing books, and Josh had read some of those books and had read some things I was writing about tools for thought, basically. Like, how do you use software to help you think and help you develop your ideas and research? This is middle of 2022, so language models were at the top of the list then. And so he reached out to me and said, "Hey, any chance you would wanna come to Google and help build the tool that you have always wanted to help people learn and organize their ideas, now built on top of language models?" And what Raiza and I kind of like, right from the beginning—I think I met Raiza like day two at Google—we were like, "Let's build something new."
+
+== SOURCE GROUNDING ==
+
+[Hannah Fry]: This came about at a time when large language models were at the top of the agenda. In those early conversations, how did you see this as being fundamentally different to just uploading a document on Gemini and getting it to summarize it for you?
+
+[Steven Johnson]: From the very beginning, we call it source grounding. That's the way we describe it. You supply the source information that you wanna work with. It might be the story you're writing, it might be the book you're researching. It might be your journals. It might be the marketing documents you're working on. And uploading that to the model then creates a kind of personalized AI that is an expert in the information that you care about. And that was not—no one was talking about that in the middle of 2022. So that was the first thing we built. I mean, we uploaded part of one of my books and I could have this very crude conversation with the model that was not at all like what you see now in text or with audio. But you could get a little taste of what it would be like to have all the ideas you were working with—instead of just talking to an open-ended model that just had its general knowledge—to actually have that personalized knowledge. And it was great because it also reduced hallucinations. It made it more factual. You could fact check it. You could go back and see the original source material. That's a big part of the whole NotebookLM experience. That was the beginning of it, and everything we've done is built on that platform, and audio overviews is just, okay, take that insight of I supply my sources and now I turn it into something else. In this case, it's an audio conversation.
+
+[Hannah Fry]: Because I guess the real key difference here is that it's very focused on the sources that you're giving it rather than just this general model.
+
+[Raiza Martin]: Yeah. I think it's a little bit harder to get started with this paradigm because it's so new. The idea that, one, you're talking to an AI. Two, you have to bring your own stuff. So there's a layer where you have to convince somebody that it's worth doing, but once you can get somebody over that hump, it's just massively useful. I think about the work that I do every day, the work Steven does every day, and many people around the world that work on computers every day, we are working with very specific sets of information, shared context that we have with others. We do research, we pull it in, we wanna extract our own insights from it. I think that's what makes NotebookLM really special and has made it special from the beginning.
+
+== A TOOL FOR WRITERS ==
+
+[Hannah Fry]: So give me some more mundane examples of how people are using this on a day-to-day level, Steven.
+
+[Steven Johnson]: We actually see a huge amount of usage of the product just with the text features. Suddenly you have this amazing resource that can answer any question about hundreds of pages of documents. And in the text version, you get citations and everything. It's a very scholarly thing, actually, Anna. You would appreciate it. You get your answers back, and every fact that the model says has a little inline footnote, and you can click directly on that footnote and go and read the original passage. Writers, journalists obviously are using it. I have one notebook that has thousands and thousands of quotes from books that I've read over the years, plus a lot of the text of books that I've written. And that notebook has basically my brain kind of captured in the AI. And so whenever I work on anything, then just have a new idea for something, I'll go into that notebook and be like, "Hey, what do you think about this idea?" And the notebook will say, "Hey, Steven, you read something related to that seven years ago. What about this passage?" And so it's a true extension of my memory.
+
+[Steven Johnson]: The other thing I'll say is we're not training the model on this information, so your information is secure. It's private. It's not gonna get into the general knowledge of the model and be used by somebody else, so you can put private information in there. And when you put a couple years of your journal in a large context model like this, you can get these amazing insights, and you can turn them into audio overviews and listen to two people talk about yourself, or you can just be like, "What was I thinking about last May?" You know, "Give me an overview of all the stuff that was going on," and 20 seconds later, you'll have this amazing document of your own life.
+
+== JOURNALING ==
+
+[Hannah Fry]: Rather than just recording stuff, can it actually be insightful in terms of your own journals?
+
+[Raiza Martin]: I would say yes, because I've used it for that purpose. One of the things that I like to ask it after uploading, I do these weekly journals, is I say, "How much have I changed over time?" And it's really remarkable. It's been able to pull out for me really interesting nuances that I haven't been able to observe about myself. It's been able to say things like, "Hey, you know, you tend to associate a lot of negativity with this particular topic. You associate a lot of positivity with this topic." And it's just really interesting. I think we see a lot of the mundane use cases—people trying to take the work that they're doing every day, for example, sales teams use this a lot to share knowledge with each other. Makes a lot of sense. There's a lot of technical, complex, changing documentation. So it's really nice to have an AI partner. I think that's really different from how a lot of AI systems work today. I use everything that's out there, and the prompts that I write are massive. The first thing that I write is, "You are a blah. This is what we are doing. Here are the documents that are relevant." And I think for NotebookLM, it sort of just shortcuts it. It's just a project space. It knows what you're talking about. You have a conversation forever. It takes up to 25 million words. It's just sort of contextually quite massive.
+
+== WHY PODCASTS? ==
+
+[Steven Johnson]: One of the things that was interesting and maybe a little bit distinctive about it was so many of the questions about what makes this product work or not work are not so much technological questions as they are editorial stylistic questions. Like, what is the right kind of answer? What's the house style for those conversations? What level should they be pitched at? And those are not technological questions. Those are language questions. And that's the crazy reality of the language model age: all these things that used to be just mostly a question of "let's get the programming right" now become more about the rhetoric of it all.
+
+[Hannah Fry]: Why did you decide to go into audio overview? What was it that inspired that? There are already quite a lot of podcasts, let's be honest. [laughs]
+
+[Steven Johnson]: Audio overviews really began as a great example of the labs structure working well. It was another small team inside of Labs focused on the audio version. And the idea was not so much to compete with podcasts, but rather that there was a whole universe of content that you would never—the economics of generating a podcast for it would never make any sense—but if you could generate one automatically, you might have five people that would wanna listen to it or one person or 20 people, but not 200,000. Like, "we wanna create a podcast based on our team meetings from the last week so we can review them." Like, that's not gonna be a commercial business. No one's gonna ask you to host that, Hannah, but actually it might be useful for that team.
+
+[Steven Johnson]: Raiza and I heard it probably in like March or April of this year. And as everyone who's heard an Audio Overview initially were just like, "Wow, what did I just hear? That was amazing." But we realized pretty early on that part of our mission with NotebookLM was to build a tool that helps people understand things. And suddenly we were like, oh wait, people really understand and remember and pay attention when they hear something in the form of an engaging conversation between two smart people. We released it internally to Googlers over the summer, and that was when we started to think, "This is gonna be a hit."
+
+== EVOLUTION OF AUDIO GENERATION TECHNOLOGY ==
+
+[Hannah Fry]: I remember in the last season, we got to hear a demo of WaveNet, which of course is one of the first AI models to generate human-like speech. Presumably there have been technological advancements necessary to make something like Audio Overview possible.
+
+[Raiza Martin]: The underlying model for NotebookLM is Gemini 1.5 Pro, and that creates really incredible content. The voice models, the audio model that we use, that by itself is a breakthrough. The realism of the human-like voices that we hear. And pair that with the approach that we've taken of editorializing the content—thinking about how do we create something really useful and really fun for you that's engaging.
+
+== INTERESTINGNESS ==
+
+[Steven Johnson]: That's a great segue to something I was gonna say, which is about interestingness. Simon, who's one of the leads on the audio side, sometimes has a slogan for Audio Overviews: "Make anything interesting." Like, make your dissertation interesting.
+
+[Hannah Fry]: It wasn't. [laughs]
+
+[Steven Johnson]: And so it's a great example of a convergence of three different technologies or breakthroughs that make something magical happen. Gemini itself is incredibly good at pulling out interesting facts or ideas or stories from the material you give it. I do this all the time, where I upload something new and say, just tell me the most interesting things from this, just in text. Computers could never do that before. You couldn't Command + F for interestingness.
+
+[Hannah Fry]: But how are you defining it even? What does it mean?
+
+[Steven Johnson]: I believe that it comes out of the basic idea behind language models, which is that they're predictive. Given this string of text, I expect the next thing to happen. And so what interestingness is is controlled surprise. I thought this was gonna be the case, but actually, there's some new information here that I wasn't expecting. And so it makes sense in a way that the language models would be good at this because their basic circuitry is prediction, and so they're looking through all this information. Given their training data, what in this information is novel or defies their expectations.
+
+[Steven Johnson]: The hosts of the show are instructed to find the interesting material and present it to the user in an engaging way. The second thing that is really cool is that the instructions take the script that is generated, and they add noise to the script—what are called disfluencies—so all the stammers and the likes and the interjections that humans actually have when they speak. And it turns out you need that because if you don't have that noise, it sounds too robotic. And then finally, there's the audio voices themselves, and what they do is all these subtle things—in English, speakers will raise their voice a little bit if they are not sure about what they're saying, or for emphasis, they will slow down—all these things that we do natively. We never even think about it. But no computer could do that until now.
+
+[Hannah Fry]: It's the voice modulation. I remember years ago at the BBC being taught to make content sound engaging, and they give you a copy of Winnie the Pooh to read. They say, "Read it as you would a news reader," and you sort of read it very flat. And then they say, "Read it as you would to a child." And your voice goes up at certain points, and it goes down low at other points. The range and the speeds completely change. But you've built all of those aspects into this. How on earth do you do that?
+
+[Steven Johnson]: We should make it very clear. We did not build the vocal model. [laughs] Geniuses inside of Google built that, and we inherited that technology. One of the questions that people have—it is English only right now, and people are very eager for it to come into different languages. And we are very eager for that too, 'cause we have a wonderful international audience, but it's not something you can do easily because the intonations and all those little conversational ticks are different in every language. You can't just "change the words into Spanish" and press play.
+
+[Raiza Martin]: DeepMind actually has a recent blog post about the audio model and how it was built and who built it and all the research papers underneath it.
+
+== SOON TO COME CAPABILITIES ==
+
+[Hannah Fry]: How do you stop this thing from just sounding like a bunch of cliches every single time?
+
+[Raiza Martin]: I actually think it's hard to get it not to sound like a bunch of cliches every time. Because of trying to standardize interestingness, that's really quite difficult. And so interestingness tends to sound the same after hearing it enough times. That's why we introduced the first improvement, which is we're letting users pass a note to the hosts—you could slip them a little instruction like, "Hey, maybe less of the cliche. Go deeper on this topic." And it will change the way that they talk about whatever content you've given them.
+
+[Hannah Fry]: Should I imagine this is almost like you have different kind of dials?
+
+[Steven Johnson]: Imagine—one thing I'm very interested in—what if you could give each of the hosts a different field of expertise? Right now they basically are interchangeable. They don't have defined perspectives on the world. But what if you were like, "I'm a city planner, and I'm working on this design for this new town square, and I want one of them to be an environmental activist, and I want one of them to be an economist. And now let's have a conversation and let's have a debate." And now suddenly they have different perspectives. People are more creative, make better decisions when they have a diverse pool of expertise helping them. That's also on our roadmap for 2025.
+
+[Hannah Fry]: Will I actually be able to interact with these hosts in the future? Like, interrupt them and join their conversation?
+
+[Steven Johnson]: We actually showed a version of this at IO, the big Google developers conference. In the demo, Josh Woodward interrupts and says, "Hey, can you use a basketball metaphor here? Because my son is listening." And they're like, "Oh, great. Let's do it in a basketball metaphor." So that has been publicly part of what we wanted to do.
+
+== HALLUCINATIONS ==
+
+[Hannah Fry]: Is there the danger here that you could have it picking up on a minor detail in the corpus and making it into a much bigger thing? We're still in a situation where large language models can hallucinate.
+
+[Steven Johnson]: The early days of like three weeks ago when we were testing this customization feature, I uploaded an article I'd written a couple of years ago, and I gave them the instructions to give me relentless criticism in the style of an insult comic at a roast. They immediately were like, "What is Johnson's problem? Did he even do any research for this piece?" But they also reached for a criticism that genuinely was kind of wrong. They misread it a little bit. I keep saying this to people—it's like they don't really hallucinate in the way that the first generation models do. It's just that they sometimes get confused or they misinterpret something in a way that humans do, and their take is a little bit off.
+
+== HUMOR ==
+
+[Hannah Fry]: What about humor? Have they ever made you laugh?
+
+[Raiza Martin]: Yes. Actually, I will say that they have made me laugh through the cleverness and the humor. Somebody uploaded a document to NotebookLM, and the document just said the words poop and fart. When I saw what it was, the person posted it on Twitter. I was like, "Oh, dear. What is this about to be?" But it was hilarious. It was so good. There were moments that were truly hilarious, and then it would dip into like, "But what does it really mean?" It would be thoughtful. It would be bizarre. It would be thought-provoking. And I'm like, "Am I really listening to this?" I took it very seriously. It was great.
+
+[Hannah Fry]: I guess that's hilarious in the way that the AI is kind of oblivious to how absurd the challenge is.
+
+[Steven Johnson]: Users were able to push them into being genuinely funny. They had to be put in a funny situation. Another one was a completely coherent-looking scientific paper with charts and graphs and footnotes, except that every word in that paper was chicken. Just chicken, chicken, chicken. All the charts were chicken. And they gave them that, and they were just like, "What is even happening?" That was the first part where I actually really laughed.
+
+== CRITICISMS OF THE TOOLS ==
+
+[Hannah Fry]: There are people who have made a criticism that it's a threat to the podcasting world, that you could be flooding the world with generic, low-quality, AI-generated podcasts.
+
+[Raiza Martin]: What we've found is that people are creating content of things that probably don't have a podcast about it to begin with. It really is things that nobody is going to make a whole show about. We're putting power in people's hands to create content that they want that they ordinarily wouldn't have access to. Most of the content I've heard—the quality is quite high. Also, all of the generations from NotebookLM are watermarked with SynthID. So we've taken a very responsible and cautious approach to making sure that as we create audio outputs that are very human-like, we approach that with watermarking.
+
+[Steven Johnson]: We are personifying these people. They do sound human, and we do all these things to make them sound human. The interesting thing is the philosophy we'd had until audio overviews—in the text version of NotebookLM, it actually does not try to sound particularly human. It's very factual, and it doesn't try to be your friend on some level.
+
+[Hannah Fry]: It's quite cold almost.
+
+[Steven Johnson]: Yes. But you can't do that with voice. That became very clear the second we first heard these—you can't say, "Convey this through a conversation, but don't sound human." There's no place where the human ear will tolerate that.
+
+[Hannah Fry]: Are there dangers or concerns associated with anthropomorphization of these characters?
+
+[Raiza Martin]: By personifying them to a certain extent, making them sound more human-like, it's a way to make information easier to consume and more useful. I've seen on TikTok all of these people uploading their study materials, and they're like, "Wow, I can study so much faster." Are these people being harmed? What is the actual danger? I think it's less about the personification and more about, okay, what did you lose by listening instead of reading? Maybe that's it.
+
+[Steven Johnson]: It turns out to be a very powerful way to learn and to understand through dialogue and asking follow-up questions. That kind of dialogue—if you wanted to have a conversation about a book and really engage with it, most people don't have access to the author, most people don't have access to an expert tutor. But now with AI, those kinds of conversational explorations are possible.
+
+[Hannah Fry]: What's to stop somebody from uploading a book where you really don't want them to have a conversation with the author? I'm thinking about putting in Mein Kampf or The Anarchist Cookbook.
+
+[Steven Johnson]: There's an underlying safety layer that Google and DeepMind spent a lot of time working on. If there are obviously offensive, dangerous things, you can catch them. The trickier thing is politics. If you upload something within the bounds of conventional political discussion, but it may be more right wing or more left wing, we specifically included instructions that say, "If it feels political, adopt the attitude of 'we're not taking sides in this. We're just gonna have a conversation about what this document says.'"
+
+[Raiza Martin]: There's the safety concern and then the censorship concern. People study difficult topics—history with violence, racism. It would be wrong to create a tool that blocks content generically without thought around the intent of the user. We're not allowing users to create harmful content, but if most of our users are learners and educators, if you're studying history, you are definitely gonna run into a safety filter.
+
+[Steven Johnson]: That was my problem. The last book I wrote was partly about the history of anarchism and the roots of terrorism. I was using NotebookLM to research that book, and it was constantly like, "I'm sorry, I can't answer that question because you are obviously a terrorist, Steven." [laughs]
+
+[Hannah Fry]: You're definitely on a list somewhere, Steven.
+
+== PRIVACY ==
+
+[Hannah Fry]: What about personal data? How do you make sure that information you upload can be private and remain so?
+
+[Steven Johnson]: The idea of the context window—effectively the short-term memory of a language model. The long-term memory is its training data. The context is the stuff you put in with your query. Anything in the context window is transitory. The second you close your session, it disappears, gets wiped from the memory. That's why it's private. We're not training the model on your information. All we're doing is putting it in the short-term memory of the model, letting the model answer questions, and then when you close the session, it's like the model has completely forgotten anything that you've given it.
+
+== FUTURE MODALITIES ==
+
+[Hannah Fry]: What other things are you hoping to include?
+
+[Raiza Martin]: More controls, more voices, more personas, more languages. That's such an exciting horizon for us.
+
+[Steven Johnson]: The one I'm so excited about—how do we write in a source-grounded environment? Just as a writer myself, that's gonna be amazing.
+
+[Hannah Fry]: You've gone to audio, but presumably you could go to video at some point.
+
+[Raiza Martin]: There's a fun idea we have for video. We're not talking about fully generative video yet, but imagine you upload slide decks with charts and diagrams, PDFs of papers. Just take the content that's already there. NotebookLM is already incredible at this because of our citations model. I think it wouldn't be that big of a leap to generate short videos using your own content.
+
+== LIMITS OF AI CONTENT CREATION ==
+
+[Hannah Fry]: You're not trying to replace all podcasts. There are presumably things NotebookLM will never be able to do.
+
+[Steven Johnson]: People will generally always prefer to hear two actual humans talking about a topic. If there's economics or passion enough to generate a podcast, humans actually talking to each other will be the choice. It just turns out there's this vast, uncharted territory. No one ever thought about making a podcast based on the family trip to Alaska 'cause it didn't make sense to rent a studio to do that. But now you can take everybody's journal entries and photos and upload it to NotebookLM. There's this untapped blank space on the map that we've just started to explore.
+
+[Hannah Fry]: Do you think there are elements of human content creation that are really hard to capture with AI?
+
+[Steven Johnson]: How capable are these models at thinking and developing ideas that are really long form? Book writing—when you're coming up with the idea for a book, it's an incredibly long-term process, and you're thinking about a presentation of information that's gonna go on for 300 pages. You couldn't approach that at all with a language model right now. You could work on little bits of it, but you can't actually imagine the whole thing. That right now is just a human exclusive capability, and I think it will be for a long time.
+
+[Hannah Fry]: Both the wood and the trees simultaneously.
+
+== HANNAH'S REFLECTIONS ==
+
+[Hannah Fry]: I think there's actually something quite heartwarming about the way that NotebookLM has captured people's imagination because on the one hand, you've got this technology that is operating at the absolute cutting edge of what is possible with some of the most sophisticated AI models out there, and it's something that's designed to deal with this very modern problem about how we are often overwhelmed with having to process large amounts of often quite dense and maybe quite boring information. And they've hit upon a solution that is so innately human, so ancient and appealing—the idea of listening in to a conversation between two excitable and interested people. And of course the fastest way to make a human prick up their ears and pay attention is through gossip. And this is like sitting around a fire while an AI uses that very trick to help you digest 25 pages of a snore-fest lecture series. I mean, put it this way—if it can make my PhD thesis sound interesting, then this has the potential to be quite a powerful tool.
+
+[Hannah Fry]: You have been listening to Google DeepMind: the Podcast, with me, Professor Hannah Fry. If you enjoyed that episode, then do subscribe to our YouTube channel, and you can also find us on your favorite podcast platform. See you next time.
